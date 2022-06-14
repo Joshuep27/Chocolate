@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Oscuro Delicia</title>
+    <link rel="stylesheet" href="opiniones.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="opinion">
+        <h2 class="op">Opinión de Nuestros Clientes</h2>
+    </div>
+    <div class="container">
+        <div class="card">
+            <div class="imgBx">
+                <img src="img3/i1.jpg">
+            </div>
+            <div class="content">
+                <h2>Ricardo</h2>
+                <p>Están muy ricas, no empalagan y me gusta que tengan de diferentes sabores.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="img3/i2.jpg">
+            </div>
+            <div class="content">
+                <h2>Ana María</h2>
+                <p>Son riquísimas, me gustaron todos los sabores.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imgBx">
+                <img src="img3/i3.jpg">
+            </div>
+            <div class="content">
+                <h2>Ximena</h2>
+                <p>Tienen buen sabor y muy buena consistencia, me gusta que la presentación esté bonita, vistosa y elegante.</p>
+            </div>
+        </div>
+    </div>
+
+<!--Toggle-->
+<div class="menuToggle" onclick="toggleMenu();"></div>
+<div class="navigation">
+	<ul>
+		<li><a href="index.html">Inicio</a></li>
+		<li><a href="nosotros.html">Nosotros</a></li>
+		<li><a href="productos.html">Productos</a></li>
+		<li><a href="opiniones.html">Opiniones</a></li>
+	</ul>
+	<div class="socialBar">
+		<ul>
+			<li><a href="https://www.instagram.com/d.a.r.k_d.e.l.i.g.h.t/?igshid=YmMyMTA2M2Y" target="_blank"><img src="img1/instagram.png"></a></li>
+		</ul>
+	</div>
+</div>  
+<script type="text/javascript">
+	function toggleMenu(){
+		var menuToggle = document.querySelector('.menuToggle');
+		var navigation = document.querySelector('.navigation');
+		menuToggle.classList.toggle('activate')
+		navigation.classList.toggle('activate')
+	}
+</script> 
+
+
+
+
+
+
+
+
+</body>
+</html>

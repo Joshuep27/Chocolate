@@ -1,0 +1,216 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+} 
+.banner{
+    position: relative;
+    right: 60px;
+    width: 100%;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.50;
+}
+.banner .content{
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+}
+.banner .content h2{
+    color: #512c0c;
+    font-size: 55px;
+    margin: 0 0 10px;
+}
+.banner header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10000;
+}
+.banner header .logo{
+    position: fixed;
+    top: 30px;
+    color:#512c0c;
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 700;
+    z-index: 100;
+}
+.banner header .toggle{
+    position:relative;
+    width: 36px;
+    height: 28px;
+    background: url(img2/toggle.png);
+    background-size: cover;
+    cursor: pointer;
+}
+.about{
+    position: relative;
+    right: 60px;
+    width: 100%;
+    display: flex;
+}
+.about .contentBx{
+    background: #934d10;
+    padding: 100px;
+    width: 50%;
+}
+.heading{
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0 0 20px;
+}
+.text{
+    color: #fff;
+    font-size: 15px;
+    margin: 5px 0 0 35px;
+}
+.about .imgBx{
+    background: url(img2/i4.jpg);
+    width: 50%;
+    background-size: cover;
+    background-position: center;
+}
+.services{
+    right: 60px;
+    background: #67350a;
+    padding: 100px;
+    text-align: center;
+}
+.services .container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+.services .container .serviceBx{
+    position: relative;
+    background: #dfdfde;
+    width: 270px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.services .container .serviceBx img{
+    width: 130px;
+    height: 180px;
+}
+.services .container .serviceBx h2{
+    font-weight: 500;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+.technology{
+    right: 60px;
+    background: #a25817;
+    padding: 100px;
+    padding-top: 250px;
+    margin-top: -250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.technology .contentBx{
+    max-width: 1000px;
+}
+.technology .imgBx{    
+    max-width: 250px;
+}
+.technology .imgBx img{
+    max-width: 100%;
+}
+
+
+
+
+
+
+/*Toggle*/
+.menuToggle{
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 60px;
+   height: 60px;
+   background: #836b00 url(img2/menu.png);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: 40px;
+   cursor: pointer;
+   z-index: 1000;
+}
+.menuToggle.activate{
+    background: #836b00 url(img2/close.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 25px;
+}
+.navigation{
+    position: fixed;
+    top: 0%;
+    left: calc(100% - 60px);
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.2s;
+}
+.navigation.activate{
+    left: 0px; 
+ }
+.navigation ul{
+    position: relative;
+}
+.navigation ul li{
+    position: relative;
+    list-style: none;
+    text-align: center;
+}
+.navigation ul li a{
+    font-size: 2.5em;
+    color:#111;
+    text-decoration: none;
+    font-weight: 500;
+}
+.navigation ul li a:hover{
+    color: #836b00;
+    text-decoration: underline;
+}
+.socialBar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100%;
+    border-right: 1px solid rgba(0,0,0,00.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

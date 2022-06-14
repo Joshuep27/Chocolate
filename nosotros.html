@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Oscuro Delicia</title>
+    <link rel="stylesheet" href="nosotros.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+<!--Nosotros-->
+<div class="banner">
+    <header>
+        <a href="index.html" class="logo">Oscura Delicia</a>
+       <!-- <div class="toggle"></div>-->
+    </header>
+    <img src="img2/portada3.jpg">
+    <div class="content">
+        <h2>¿Quiénes somos?</h2>
+        <p>Somos "Oscura Delicia", una empresa 100% mexicana dedicada a elaborar trufas de chocolate para satisfacer el paladar de nuestros estimados consumidores, nacida en 2022 con el fin de llegar al paladar de todas las personas.</p>
+    </div>
+</div>
+
+<!--About-->
+<section class="about">
+    <div class="contentBx">
+        <h2 class="heading">¿Qué Nos Caracteriza?</h2>
+        <p class="text">Oscura Delicia se caracteriza por ser una empresa que procura satisfacer a sus clientes de la mejor manera, brindandoles un servicio unico y de calidad, creando trufas de chocolate con ayuda de personal calificado, además de preocuparnos en mejorar nuestra ecología y tener un desarrollo sustentable</p>
+    </div>
+    <div class="imgBx"></div>
+</section>
+<!--Nuestras Actividades-->
+<section class="services">
+    <h2 class="heading">Nuestras Actividades</h2>
+    <p class="text">En Oscura Delicia procuramos tener un proceso artesanal de la mejor calidad, y para garantizar este proceso, realizamos inspecciones en toda nuestra cadena productiva, eligiendo y comprando a proveedores que ofrezcan ingredientes del más alto nivel y que cumplan
+        con los estándares de calidad, salud y derecho laboral; de la misma manera, nuestras plantas de producción cuentan con certificaciones que garantizan un correcto labor en la creación de las trufas artesanales, las cuales serán distribuidas a lo largo de la localidad, 
+        ofreciendo un grato servicio post-venta a nuestros clientes. </p>
+    <div class="container">
+        <div class="serviceBx">
+            <div>
+                <img src="img2/icon1.png">
+                <h2>Compras</h2>
+            </div>
+        </div>
+        <div class="serviceBx">
+            <div>
+                <img src="img2/icon2.png">
+                <h2>Producción</h2>
+            </div>
+        </div>
+        <div class="serviceBx">
+            <div>
+                <img src="img2/icon3.png">
+                <h2>Venta</h2>
+            </div>
+        </div>
+    </div>
+</section>
+<!--Nuestras cualidades-->
+<section class="technology">
+    <div class="contentBx">
+        <h2 class="heading">Lo importante es primero</h2>
+        <p class="text">Las instalaciones productivas de Oscura Delicia se encuentran aptas para la elaboración y manejo del chocolate, respetando las normas de salubridad
+            y manteniendolas en orden jurídico al contratar especialistas e inspectores que evaluan el entorno de la planta productiva para así garantizar la protección de nuestros consumidores.
+        </p>
+    </div>
+    <div class="imgBx">
+        <img src="img2/iicon1.png">
+    </div>
+</section>
+
+
+
+<!--Toggle-->
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <div class="navigation">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="nosotros.html">Nosotros</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="#">Opiniones</a></li>
+        </ul>
+        <div class="socialBar">
+            <ul>
+                <li><a href="https://www.instagram.com/d.a.r.k_d.e.l.i.g.h.t/?igshid=YmMyMTA2M2Y" target="_blank"><img src="img1/instagram.png"></a></li>
+            </ul>
+        </div>
+    </div>  
+    <script type="text/javascript">
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.menuToggle');
+            var navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('activate')
+            navigation.classList.toggle('activate')
+        }
+    </script> 
+
+</body>
+</html>
